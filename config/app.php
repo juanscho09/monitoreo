@@ -178,6 +178,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -228,6 +230,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
+
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
