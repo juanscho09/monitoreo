@@ -19,19 +19,19 @@
         @endif
 
         <!-- search form (Optional) -->
-        <form action="#" method="get" class="sidebar-form">
+        <!--<form action="#" method="get" class="sidebar-form">
             <div class="input-group">
                 <input type="text" name="q" class="form-control" placeholder="{{ trans('adminlte_lang::message.search') }}..."/>
               <span class="input-group-btn">
                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
               </span>
             </div>
-        </form>
+        </form>-->
         <!-- /.search form -->
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
-            <li class="header">{{ trans('adminlte_lang::message.header') }}</li>
+            <!--<li class="header">{{ trans('adminlte_lang::message.header') }}</li>-->
             <!--
             <li class="active"><a href="{{ url('home') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.home') }}</span></a></li>
             <li><a href="#"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.anotherlink') }}</span></a></li>
@@ -44,8 +44,20 @@
             </li>-->
             <li>
                 <a href="{{ url('/sensado') }}">
-                    <i class='fa fa-link'></i>
+                    <i class='fa fa-table'></i>
                     <span>Datos</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url('/sector') }}">
+                    <i class='fa fa-th-large'></i>
+                    <span>Puestos</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url('/configuracion') }}">
+                    <i class='fa fa-link'></i>
+                    <span>Configuraci&oacute;n</span>
                 </a>
             </li>
         </ul><!-- /.sidebar-menu -->

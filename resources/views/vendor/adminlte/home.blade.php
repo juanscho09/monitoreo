@@ -4,6 +4,13 @@
 	{{ trans('adminlte_lang::message.home') }}
 @endsection
 
+@section('contentheader_title')
+	Datos de Sensado
+@endsection
+
+@section('script_page')
+	{{ Html::script('js/site/dashboard/inicio.js') }}
+@endsection
 
 @section('main-content')
 	<div class="container-fluid spark-screen">
@@ -13,7 +20,7 @@
 				<!-- Default box -->
 				<div class="box">
 					<div class="box-header with-border">
-						<h3 class="box-title">Home</h3>
+						<h3 class="box-title">Promedio de todas las zonas</h3>
 
 						<div class="box-tools pull-right">
 							<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -22,8 +29,11 @@
 								<i class="fa fa-times"></i></button>
 						</div>
 					</div>
-					<div class="box-body">
-						{{ trans('adminlte_lang::message.logged') }}. Start creating your amazing application!
+					<div class="box-body center">
+
+
+						<div id="medidores" style="width: 400px; height: 200px;"></div>
+						<div id="medidores2" style="width: 400px; height: 200px;"></div>
 					</div>
 					<!-- /.box-body -->
 				</div>

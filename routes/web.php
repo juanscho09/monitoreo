@@ -25,4 +25,5 @@ Route::group(['middleware' => 'auth'], function () {
     //Route::get('/listado_sensado', 'UserController@showProfile');
 
     Route::resource('sensado', 'ParametrosController');
+    Route::resource('sector', 'SectorController');
 });
